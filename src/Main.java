@@ -7,10 +7,10 @@ public class Main {
         task4();
         task5();
         task6();
-        //task7();
-        //task8();
-        // task9();
-        // task10();
+        task7();
+        task8();
+        task9();
+        task10();
 
 
     }
@@ -58,9 +58,6 @@ public class Main {
 
         System.out.println("Задача 5");
         for (int year = 1904; year <=2096;  year= year+4 ){
-            if (year % 100 == 0 && year % 400 != 0){
-                continue;
-            }
             System.out.println(year + " год является високосным.");
         }
 
@@ -87,20 +84,23 @@ public class Main {
 
         // Пишем код для задачи 8
         System.out.println("Задача 8");
-        int salary = 29000;
+        int saving = 29000;
         int total = 0;
-        for (int i = 0; i < 17; i= i+2 ){
-            total= total + salary;
-
+        for (int i = 1; i <=12; i= ++i ){
+            total= total + saving;
+            System.out.println("Месяц " + i + ", сумма накоплений равна "+ total +" рублей");
         }
-        System.out.println("");
     }
     public static void task9() {
 
         // Пишем код для задачи 9
         System.out.println("Задача 9");
-        for (int i = 0; i < 17; i= i+2 ){
-            System.out.println("Итерация цикла " + i);
+
+        int savingBank = 29000;
+        double total = 0;
+        for (int i = 1; i <= 12; i= ++i ){
+            total = total + savingBank +(total +savingBank)*0.01;
+            System.out.println("Месяц " + i + ", сумма накоплений равна "+ total +" рублей")  ;
         }
 
     }
@@ -108,10 +108,13 @@ public class Main {
 
         // Пишем код для задачи 10
         System.out.println("Задача 10");
-        for (int i = 0; i < 17; i= i+2 ){
-            System.out.println("Итерация цикла " + i);
-        }
 
+        int a = 2;
+
+        for (int i = 1; i <= 10; i= ++i){
+            int total = a*i;
+            System.out.println(a+ " * " + i + " = " + total);
+        }
     }
 
 }
