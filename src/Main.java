@@ -67,8 +67,9 @@ public class Main {
         // Пишем код для задачи 6
         System.out.println("Задача 6");
         for (int i = 7; i <= 98; i= i+7 ){
-            System.out.println("Итерация цикла " + i);
+            System.out.print(i+ " ");
         }
+        System.out.println("\n");
 
     }
     public static void task7() {
@@ -76,8 +77,9 @@ public class Main {
         // Пишем код для задачи 7
         System.out.println("Задача 7");
         for (int i = 1; i <= 512; i= i*2 ){
-            System.out.println("Итерация цикла " + i);
+            System.out.print(i + " ");
         }
+        System.out.println("\n");
 
     }
     public static void task8() {
