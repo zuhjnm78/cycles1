@@ -102,7 +102,7 @@ public class Main {
         double total = 0;
         for (int i = 1; i <= 12; i= ++i ){
             total = total + savingBank +(total +savingBank)*0.01;
-            System.out.println("Месяц " + i + ", сумма накоплений равна "+ total +" рублей")  ;
+            System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей. %n", i,total);
         }
 
     }
